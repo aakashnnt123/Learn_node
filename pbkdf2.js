@@ -9,10 +9,11 @@ var b = 28986;
 
 const key=crypto.pbkdf2Sync("password" , "salt" , 500000 , 50, "sha512");
 
-console.log(key);
+console.log("Sync key:" ,key);
 
 // pbkdf-> Password Base Key Deravtive Function...
 crypto.pbkdf2("password" , "salt" , 500000 , 50, "sha512", (err,key)=>{
+  console.log("Async key :" ,key);
   console.log("Key is Generated");
 })
 
