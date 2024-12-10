@@ -6,6 +6,9 @@ console.log("Hello world");
 var a = 10786943;
 var b = 28986;
 
+const data = fs.readFileSync("./file.txt", "utf8");
+
+console.log("Sync data: ",data)
 
 https.get("https://dummyjson.com/products/1" , (res) =>
 {
@@ -15,6 +18,7 @@ https.get("https://dummyjson.com/products/1" , (res) =>
 setTimeout(()=>{
   console.log("setTimeout function called");
 },5000);
+
 
 fs.readFile("./file.txt", "utf8", (err,data)=>{
   if(err)
