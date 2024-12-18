@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "mongodb": "^6.12.0"
+  },
+  "name": "learn_node",
+  "version": "1.0.0",
+  "main": "async.js",
+  "scripts": {
+    "test": "Node Restapi_project.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
